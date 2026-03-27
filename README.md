@@ -3,7 +3,7 @@
 A sleek, responsive, and modern personal portfolio website built for Alula Muzey, an aspiring full-stack developer.
 
 ## ✨ Features
-- **Dark & Light Mode:** Seamlessly toggle between a premium dark UI (default) and a crisp, high-contrast light mode with user preference saved in local storage.
+- **Dark & Light Mode:** Seamlessly toggle between a high-contrast light  UI (default) and a crisp, premium dark mode with user preference saved in local storage.
 - **Interactive Project Showcase:** Features auto-playing image slideshows and creative terminal-style layouts to display projects.
 - **Fully Responsive:** Optimized for desktop, tablet, and mobile devices.
 - **Smooth Animations:** Scroll-spy navigation, fade-in loading cascades, and interactive hover effects.
