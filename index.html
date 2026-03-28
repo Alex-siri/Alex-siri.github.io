@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">port<span>folio</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle Theme" class="theme-btn">
+          <i class="fas fa-sun"></i>
+        </button>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Home Section -->
+  <header id="home" class="scrl-section fade-in">
+    <div class="home-container">
+      <div class="home-content">
+        <p class="subtitle animate-fade-in" style="--delay: 1">HELLO, I'M</p>
+        <h1 class="title animate-fade-in" style="--delay: 2">Alula <span class="highlight">Muzey</span></h1>
+        <h2 class="role-title animate-fade-in" style="--delay: 3">Full Stack Developer</h2>
+        <p class="description animate-fade-in" style="--delay: 4">I build modern, functional web applications using frontend and backend technologies.</p>
+        
+        <div class="credibility-line animate-fade-in" style="--delay: 4.5">
+          <i class="fas fa-laptop-code"></i> Actively building projects, improving my skills, and seeking opportunities to grow as a full stack developer.
+        </div>
+        
+        <div class="cta-buttons animate-fade-in" style="--delay: 5">
+          <a href="#projects" class="btn primary smooth-scroll">View My Work</a>
+          <a href="#contact" class="btn secondary smooth-scroll">Get In Touch</a>
+        </div>
+        
+        <div class="home-socials animate-fade-in" style="--delay: 6">
+          <a href="https://github.com/Alex-siri" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/Alex-siri" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/AlulaMuzey" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="home-image">
+        <!-- The user's portrait on the right -->
+        <img src="assets/owner.png" alt="Alula Muzey Portrait" class="portrait hover-lift">
+      </div>
+    </div>
+    
+    <a href="#about" class="scroll-down-arrow smooth-scroll" aria-label="Scroll down">
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="scrl-section fade-in">
+    <div class="section-container">
+      <p class="section-subtitle">ABOUT ME</p>
+      <h2 class="section-title">Passionate about building <span class="highlight">meaningful<br>products</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I’m a full stack developer focused on building modern web applications using both frontend and backend technologies. I continuously improve my skills by working on real-world projects and enjoy solving problems through code. My goal is to create clean, efficient, and user-friendly applications that deliver real value.</p>
+        </div>
+        <div class="about-features">
+          <div class="feature-card">
+            <i class="fas fa-code"></i>
+            <h3>Clean Code</h3>
+            <p>Writing maintainable, scalable solutions</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-palette"></i>
+            <h3>Design Eye</h3>
+            <p>Pixel-perfect UI with great UX</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-bolt"></i>
+            <h3>Performance</h3>
+            <p>Fast, optimized applications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="scrl-section fade-in">
+    <div class="section-container">
+      <p class="section-subtitle">Expertise</p>
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <h3>CSS3 & Tailwind</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js skill-icon"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react skill-icon"></i>
+          <h3>React</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python skill-icon"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database skill-icon"></i>
+          <h3>Databases & SQL</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="scrl-section fade-in">
+    <div class="section-container">
+      <p class="section-subtitle">Portfolio</p>
+      <h2 class="section-title">Featured <span class="highlight">Work</span></h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img slideshow">
+            <img src="assets/home.png" alt="Gym Website Home">
+            <img src="assets/trainers.png" alt="Gym Trainers">
+            <img src="assets/success.png" alt="Gym Success Stories">
+          </div>
+          <div class="project-info">
+            <h3>Gym Website</h3>
+            <p>A responsive frontend gym website featuring workout plans, membership details, and a modern UI design.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Alex-siri/My_website.github.io"><i class="fab fa-github"></i> Code</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img slideshow">
+            <img src="assets/pong%20game.png" alt="Pong Game">
+            <img src="assets/snake%20game.png" alt="Snake Game">
+            <img src="assets/cryptography-caesar-cipher-en.png" alt="Caesar Cipher">
+            <img src="assets/hangman.jpeg" alt="Hangman">
+            <img src="assets/blackjack.jpeg" alt="Blackjack">
+          </div>
+          <div class="project-info">
+            <h3>Python Mini Projects</h3>
+            <p>A collection of small Python projects built while learning — including calculators, games, web scrapers, and automation scripts.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Automation</span>
+              <span>Scripting</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Alex-siri?tab=repositories"><i class="fab fa-github"></i> Code</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="scrl-section fade-in">
+    <div class="section-container">
+      <p class="section-subtitle">CONTACT</p>
+      <h2 class="section-title">Let's <span class="highlight">connect</span></h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="info-block">
+            <i class="far fa-envelope"></i>
+            <div class="info-text">
+              <h3>Email</h3>
+              <p>alulamuzey@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-block">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info-text">
+              <h3>Location</h3>
+              <p>Ethiopia, Meklle</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn">
+              Send Message <i class="far fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Alula Muzey. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/Alex-siri"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/Alex-siri"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/AlulaMuzey"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dovvmas/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
