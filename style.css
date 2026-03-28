@@ -23,23 +23,23 @@
 [data-theme="light"], .light-mode {
   --primary: #d4af37;
   --secondary: #b8860b;
-  --secondary-accent: #1e3a5f;
+  --secondary-accent: #b8860b;
   --highlight-gradient: linear-gradient(90deg, var(--primary), var(--secondary));
-  --bg-color: #f7f7f9;
+  --bg-color: #f3f3f3;
   --text-main: #000000;
   --text-muted: #2d2d30;
   --card-bg: #ffffff;
   --border: rgba(0, 0, 0, 0.15);
-  --nav-bg: rgba(255, 255, 255, 0.85);
-  --img-bg: #0d1e38;
-  --input-bg: #1a2a45;
-  --shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  --btn-primary-text: #ffffff;
-  --hover-shadow: rgba(30, 58, 95, 0.4);
+  --nav-bg: rgba(243, 243, 243, 0.85);
+  --img-bg: #fdf8e8;
+  --input-bg: #fdf8e8;
+  --shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+  --btn-primary-text: #1a1a1a;
+  --hover-shadow: rgba(212, 175, 55, 0.4);
   --border-hover: rgba(212, 175, 55, 0.4);
-  --badge-bg: rgba(30, 58, 95, 0.2);
-  --img-gradient-start: rgba(30, 58, 95, 0.3);
-  --img-gradient-end: rgba(30, 58, 95, 0.1);
+  --badge-bg: rgba(212, 175, 55, 0.15);
+  --img-gradient-start: rgba(212, 175, 55, 0.3);
+  --img-gradient-end: rgba(212, 175, 55, 0.05);
 }
 
 * {
@@ -899,4 +899,9 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+[data-theme="light"] .project-card,
+.light-mode .project-card {
+  background-color: var(--input-bg);
 }

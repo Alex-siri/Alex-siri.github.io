@@ -18,6 +18,8 @@ themeToggleBtn.addEventListener('click', () => {
 });
 
 function updateThemeIcon(theme) {
+  const photo = document.querySelector(".home-image img.portrait");
+  if (photo) photo.src = theme === "dark" ? "assets/alula.png" : "assets/owner.png";
   if (theme === 'dark') {
     themeIcon.className = 'fas fa-sun'; // Show sun to indicate click for light mode
   } else {
