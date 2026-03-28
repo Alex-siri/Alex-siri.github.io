@@ -265,8 +265,7 @@ ul {
   line-height: 1.7;
   font-size: 1.05rem;
   text-shadow: none;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
 
 .credibility-line {
@@ -422,6 +421,8 @@ ul {
   max-width: 800px;
   text-align: justify;
   text-justify: inter-word;
+  text-align-last: left;
+  hyphens: auto;
 }
 
 .about-features {
@@ -566,12 +567,13 @@ ul {
 
 .slideshow img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 10px;
+  left: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 20px);
   object-fit: contain;
   object-position: center;
+  border-radius: 0.5rem;
   opacity: 0;
   background-color: var(--img-bg); /* Blends the edges if the picture isn't a perfect 16:9 */
   animation-name: fadeSlider;
