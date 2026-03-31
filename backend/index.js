@@ -12,7 +12,9 @@ app.use(express.json()); // Parse incoming JSON payloads
 // Email Transporter Config
 // NOTE: For Gmail, you will likely need an "App Password" to allow Node to successfully send emails.
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
         user: 'alulamuzey@gmail.com', // Your Gmail address
         pass: 'oahwrvrqgdwloggq' // Your generated App Password (spaces removed)
