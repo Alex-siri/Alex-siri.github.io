@@ -996,13 +996,26 @@ ul {
 .form-group input, .form-group textarea {
   width: 100%;
   padding: 1rem;
-  background: var(--input-bg);
+  background: #d4ae6a; /* A balanced warm golden-brown medium tone */
   border: none;
   border-radius: 0.5rem;
-  color: #000; /* Specifically changed to black */
+  color: #000 !important; /* Specifically changed to black */
   font-family: inherit;
   font-size: 0.9rem;
   transition: background-color 0.3s, color 0.3s;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+  color: #333333; /* Darker, almost black placeholder text */
+  opacity: 1;
+}
+
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:hover, 
+.form-group input:-webkit-autofill:focus, 
+.form-group input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #d4ae6a inset !important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .form-group input:focus, .form-group textarea:focus {
