@@ -1,2 +1,3 @@
 portfolio/assets/
 portfolio/backend/node_modules/
+*.png\n*.jpg\n*.jpeg\n*.gif\n*.svg\nassets/
