@@ -91,7 +91,7 @@ if (contactForm) {
     const message = document.getElementById('message').value;
 
     try {
-      const response = await fetch('http://localhost:3000/contact', {
+      const response = await fetch('https://alula-muzey.me/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
