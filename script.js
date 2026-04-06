@@ -91,17 +91,23 @@ if (contactForm) {
     const message = document.getElementById('message').value;
 
     try {
-      const response = await fetch('https://alula-muzey.me/contact', {
+      const response = await fetch('https://formsubmit.co/ajax/alulamuzey20@gmail.com', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: JSON.stringify({ name, email, message })
+        body: JSON.stringify({ 
+            name: name,
+            email: email, 
+            message: message,
+            _subject: "New Portfolio Message from " + name 
+        })
       });
 
       const data = await response.json();
 
-      if (response.ok && data.success) {
+      if (response.ok) {
         alert('Thank you for reaching out! Your message was sent successfully.');
         contactForm.reset();
       } else {
