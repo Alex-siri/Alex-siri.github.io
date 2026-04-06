@@ -6,7 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors()); // Allow frontend to communicate with backend
+app.use(cors({
+    origin: ['https://alula-muzey.me', 'http://localhost:3000']
+})); // Allow frontend to communicate with backend
 app.use(express.json()); // Parse incoming JSON payloads
 
 // Email Transporter Config
