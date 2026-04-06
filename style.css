@@ -269,18 +269,20 @@ ul {
   flex: 1;
   text-align: left;
   z-index: 10;
+  margin-top: 5rem;
 }
 
 .subtitle {
   color: var(--primary);
   letter-spacing: 0.2rem;
   font-size: 0.9rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
+  margin-top: 6rem;
 }
 
 .title {
   font-size: 4.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   line-height: 1.1;
   text-shadow: none;
 }
@@ -290,7 +292,7 @@ ul {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--text-main);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   opacity: 0.9;
   
   display: inline-block;
