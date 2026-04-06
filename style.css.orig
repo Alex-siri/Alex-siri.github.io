@@ -1102,7 +1102,7 @@ footer {
     transition: max-height 0.4s ease, padding 0.4s ease;
     backdrop-filter: blur(10px);
   }
-  
+
   .nav-links.show {
     max-height: 400px;
     padding: 2rem 0;
@@ -1227,7 +1227,7 @@ footer {
 /* Print/PDF CV Styles */
 @media print {
   /* Hide unnecessary UI elements */
-  .navbar, .cta-buttons, .scroll-down-arrow, .contact-form-container, #theme-toggle {
+  .navbar, .cta-buttons, .scroll-down-arrow, .contact-form-container, footer, #theme-toggle {
     display: none !important;
   }
   
@@ -1276,50 +1276,6 @@ footer {
     animation: none !important;
     transition: none !important;
     visibility: visible !important;
-  }
-
-  /* Scale everything down so it fits perfectly on standard A4 */
-  html {
-    font-size: 65% !important; 
-  }
-  
-  .section-container {
-    max-width: 100% !important;
-    padding: 0 1rem !important;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr 1fr 1fr !important;
-    gap: 1rem !important;
-  }
-  
-  .skills-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* Force side by side */
-    gap: 1.5rem !important;
-  }
-  
-  .skill-card {
-    padding: 2rem !important; /* Make skills bigger */
-    font-size: 1.2rem !important;
-  }
-  
-  .project-img {
-    height: 120px !important; /* Shrink images down to save space */
-  }
-  
-  .print-only-socials {
-    display: flex !important;
-  }
-  
-  .print-only-socials a {
-    color: var(--highlight) !important;
-    text-decoration: none !important;
-  }
-  
-  /* Hide the footer on PDF since the socials are in the Let's Connect section */
-  footer {
-    display: none !important;
   }
 }
 

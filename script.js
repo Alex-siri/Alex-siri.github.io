@@ -160,3 +160,12 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Download CV Function
+const downloadCvBtn = document.getElementById('download-cv-btn');
+if (downloadCvBtn) {
+  downloadCvBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.print(); // Triggers the browser's native print-to-PDF functionality
+  });
+}
