@@ -239,7 +239,7 @@ ul {
   right: 5%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(15, 15, 16, 0) 70%);
+  
   transform: translateY(-50%);
   z-index: -1;
   pointer-events: none;
@@ -255,7 +255,7 @@ ul {
   object-position: top center;
   z-index: 1;
   /* A golden CSS filter tint to shift the white light to gold for dark mode */
-  filter: sepia(45%) saturate(160%) hue-rotate(-15deg) contrast(1.15) brightness(1.05);
+  /* removed filter */
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
 }

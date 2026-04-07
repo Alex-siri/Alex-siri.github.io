@@ -65,5 +65,5 @@ app.post('/contact', async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`✅ Backend server is running at http://alula-muzey.me:${PORT}`);
+    console.log(`✅ Backend server is running at http://localhost:${PORT}`);
 });
