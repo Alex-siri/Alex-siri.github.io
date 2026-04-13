@@ -4,7 +4,10 @@ A sleek, responsive, and modern personal portfolio website built for Alula Muzey
 
 ## 📸 Preview
 
-![Neon Particle Home View](assets/screenshots/home-particle-preview.png)
+| Hero Section | Feature Section |
+|---|---|
+| ![Hero Dark](assets/screenshots/hero-dark.png) | ![Features](assets/screenshots/features-light.png) |
+| ![Screenshot 1](assets/screenshots/Screenshot%20from%202026-04-13%2021-06-16.png) | ![Screenshot 2](assets/screenshots/Screenshot%20from%202026-04-13%2021-06-23.png) |
 
 ## ✨ Features
 - **Interactive Particle Network:** A dynamic, neon-green particle system that dynamically pushes away from the user cursor using tsParticles.
