@@ -4,14 +4,12 @@ A sleek, responsive, and modern personal portfolio website built for Alula Muzey
 
 ## 📸 Preview
 
-| Light Home | Dark Home |
-|---|---|
-| ![Light Home](assets/screenshots/home-light.png) | ![Dark Home](assets/screenshots/home-dark.png) |
-| ![Projects Light](assets/screenshots/projects-light-new.png) | ![About & Skills Dark](assets/screenshots/about-skills-dark.png) |
+![Neon Particle Home View](assets/screenshots/home-particle-preview.png)
 
 ## ✨ Features
-- **Dark & Light Mode:** Seamlessly toggle between a high-contrast light UI and a crisp, premium dark mode with user preference saved in local storage.
-- **Interactive Project Showcase:** Features auto-playing image slideshows and creative terminal-style layouts to display projects.
+- **Interactive Particle Network:** A dynamic, neon-green particle system that dynamically pushes away from the user cursor using tsParticles.
+- **Premium Dark Theme:** A crisp, high-contrast dark layout tailored specifically for a sleek developer aesthetic.
+- **Interactive Project Showcase:** Clean, modern cards to display web development projects and live links.
 - **Fully Responsive:** Optimized for desktop, tablet, and mobile devices.
 - **Smooth Animations:** Scroll-spy navigation, fade-in loading cascades, and interactive hover effects.
 - **Functional Contact Form:** Built-in Node.js backend to capture form submissions and email them directly to your inbox via Nodemailer.
