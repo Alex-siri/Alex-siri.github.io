@@ -1,31 +1,5 @@
-// Theme Toggle Logic
-const themeToggleBtn = document.getElementById('theme-toggle');
-const themeIcon = themeToggleBtn.querySelector('i');
-
-// Check for saved theme preference, default to 'light'
-const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
-document.documentElement.setAttribute('data-theme', savedTheme);
-updateThemeIcon(savedTheme);
-
-themeToggleBtn.addEventListener('click', () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('portfolio-theme', newTheme);
-  
-  updateThemeIcon(newTheme);
-});
-
-function updateThemeIcon(theme) {
-  const photo = document.querySelector(".home-image img.portrait");
-  if (photo) photo.src = theme === "dark" ? "assets/alula2.png" : "assets/alula1.png";
-  if (theme === 'dark') {
-    themeIcon.className = 'fas fa-sun'; // Show sun to indicate click for light mode
-  } else {
-    themeIcon.className = 'fas fa-moon'; // Show moon to indicate click for dark mode
-  }
-}
+// Force dark mode
+document.documentElement.setAttribute('data-theme', 'dark');
 
 // Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');

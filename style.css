@@ -255,15 +255,8 @@ ul {
   object-fit: cover;
   object-position: top center;
   z-index: 1;
-  /* A golden CSS filter tint to shift the white light to gold for dark mode */
-  /* removed filter */
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
-}
-
-[data-theme="light"] .home-image img.portrait,
-.light-mode .home-image img.portrait {
-  filter: grayscale(10%) contrast(1.1);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
 }
 
 .home-content {
