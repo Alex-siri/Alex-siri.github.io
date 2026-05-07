@@ -149,3 +149,62 @@ if (downloadCvBtn) {
     window.print(); // Triggers the browser's native print-to-PDF functionality
   });
 }
+
+// Certificates Slider Logic
+const track = document.getElementById('cert-slider');
+const prevBtn = document.getElementById('cert-prev');
+const nextBtn = document.getElementById('cert-next');
+const dotsContainer = document.getElementById('cert-dots');
+
+if (track && prevBtn && nextBtn && dotsContainer) {
+  const items = Array.from(track.children);
+  let currentIndex = 0;
+
+  // Create dots
+  items.forEach((_, idx) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (idx === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      goToSlide(idx);
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = Array.from(dotsContainer.children);
+
+  function updateSlider() {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateSlider();
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = items.length - 1; // loop back
+    }
+    updateSlider();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < items.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0; // loop back
+    }
+    updateSlider();
+  });
+
+  // Optional: Auto slide
+  // setInterval(() => {
+  //   nextBtn.click();
+  // }, 5000);
+}

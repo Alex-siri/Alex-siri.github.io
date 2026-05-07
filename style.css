@@ -1229,6 +1229,137 @@ footer {
   background-color: var(--border-color);
 }
 
+/* --- Certificates & Recommendations Slider --- */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.cert-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.doc-download-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: var(--primary);
+  font-size: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 5px;
+  padding: 5px 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.doc-download-icon:hover {
+  color: var(--btn-primary-text);
+  background: var(--primary);
+  transform: scale(1.1);
+}
+
+.cert-img-placeholder {
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.cert-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cert-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.slider-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--primary);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+.slider-btn:hover {
+  background: var(--primary);
+  color: var(--btn-primary-text);
+  transform: scale(1.1);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--border);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--primary);
+}
+
 /* Print/PDF CV Styles */
 @media print {
   /* Hide unnecessary UI elements */
