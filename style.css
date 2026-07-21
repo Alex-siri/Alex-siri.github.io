@@ -712,6 +712,86 @@ ul {
   font-size: 1.1rem;
 }
 
+/* Screenshot Features Section Styles */
+.skills-extra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.extra-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header .header-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.card-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* Professional Skills Grid */
+.prof-skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.check-icon {
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+/* Languages List */
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lang-item {
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid var(--primary);
+  padding: 1rem 1.2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.lang-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.lang-level {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 /* Projects Section */
 .projects-grid {
   display: grid;
@@ -1180,6 +1260,8 @@ footer {
   .cta-buttons { flex-direction: column; }
   .about-features { grid-template-columns: 1fr; }
   .journey-wrapper { grid-template-columns: 1fr; gap: 3rem; }
+  .skills-extra-grid { grid-template-columns: 1fr; }
+  .prof-skills-list { grid-template-columns: 1fr; }
   .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
   .footer-container {
     flex-direction: column;
@@ -1217,10 +1299,19 @@ footer {
 .skills-grid .skill-card:nth-child(4) { /* React */
   background: url('assets/bg/skill-4.svg') right bottom no-repeat, linear-gradient(135deg, rgba(97, 218, 251, 0.15) 0%, transparent 100%), var(--card-bg);
 }
-.skills-grid .skill-card:nth-child(5) { /* Python */
+.skills-grid .skill-card:nth-child(5) { /* Next.js */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 100%), var(--card-bg);
+}
+.skills-grid .skill-card:nth-child(6) { /* Node.js */
+  background: linear-gradient(135deg, rgba(104, 160, 99, 0.15) 0%, transparent 100%), var(--card-bg);
+}
+.skills-grid .skill-card:nth-child(7) { /* MongoDB */
+  background: linear-gradient(135deg, rgba(71, 162, 72, 0.15) 0%, transparent 100%), var(--card-bg);
+}
+.skills-grid .skill-card:nth-child(8) { /* Python */
   background: url('assets/bg/skill-5.svg') right bottom no-repeat, linear-gradient(135deg, rgba(55, 118, 171, 0.15) 0%, transparent 100%), var(--card-bg);
 }
-.skills-grid .skill-card:nth-child(6) { /* Databases & SQL */
+.skills-grid .skill-card:nth-child(9) { /* Databases & SQL */
   background: url('assets/bg/skill-6.svg') right bottom no-repeat, linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, transparent 100%), var(--card-bg);
 }
 
@@ -1483,4 +1574,3 @@ footer {
     display: none !important;
   }
 }
-
