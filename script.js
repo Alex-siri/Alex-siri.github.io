@@ -141,15 +141,19 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Download CV Function
 const downloadCvBtn = document.getElementById('download-cv-btn');
 if (downloadCvBtn) {
-  downloadCvBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    window.print(); // Triggers the browser's native print-to-PDF functionality
+  downloadCvBtn.addEventListener('click', function() {
+    // Open the PDF directly using window.open (works cleanly with spaces in local servers)
+    const link = document.createElement('a');
+    link.href = './assets/cv.pdf';
+    link.download = 'Alula_Muzey_CV.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   });
 }
-
 // Certificates Slider Logic
 const track = document.getElementById('cert-slider');
 const prevBtn = document.getElementById('cert-prev');
